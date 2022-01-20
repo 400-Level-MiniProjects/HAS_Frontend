@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors:{
         tprimary:'#2D3132',
-        bprimary:'#203B93'
+        bprimary:'#203B93',
+        lprimary: '#DDE1EF'
       },
       width:{
         '3/7':'45%',
