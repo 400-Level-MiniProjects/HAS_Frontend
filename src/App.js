@@ -1,24 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import GenerateRoom from "./pages/generateRoom";
+import PrintReciept from "./pages/printReciept";
+import Reciept from "./pages/reciept";
 
 function App() {
   return (
-    <div className="bg-red-500">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to <code>HAS FRONTEND</code> make changes and save to reload.
-          Goodluck
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+         <Route path='/' exact element={<GenerateRoom/>} />
+         <Route path='/print_reciept' exact element={<PrintReciept/>} />
+         <Route path='/reciept' exact element={<Reciept/>} />
+    </Routes>
   );
 }
 
